@@ -9,31 +9,49 @@
     <h1>NO</h1>
     <a href="./home.html">got  to home page</a>
 
-    <table border="1">
-        <tr>
-            <td>Name</td>
-            <td>Working Hours</td>
-            <td>Type</td>
-            <td>rank</td>
-        </tr>
-        <tr>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>1</td>
-        </tr>
+    <table border="1" cellspacing="" cellpadding="10" align="center"> <!-- //! this attributes are self depricating -->
+        <caption>Values table</caption> 
+        <thead> <tr>
+                <th>Name</th>
+                <th>Working Hours</th>
+                <th>Type</th>
+                <th>rank</th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td rowspan="2">naman</td>
+                <td colspan="2">10</td>
+                <td>S/W engg</td>
+                <!-- <td>1</td> -->
+            </tr>
+            <tr>
+                <!-- <td>Value 5</td> -->
+                <td colspan="2">Value 6</td>
+                <td>Value 7</td>
+                <!-- <td>1</td> -->
+            </tr>
+            <tr>
+                <td>Value 9</td>
+                <td rowspan="2" colspan="2">Value 10</td> <!-- //!tbody ka span tfoot maii kaam nahi karega -->
+                <td>Value 11</td>
+                <!-- <td>12</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td align="center">Value 13</td>
+                <td colspan="2" align="center">Value 14</td>
+                <td>Value 15</td>
+                <!-- <td>16</td> -->
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
